@@ -1,15 +1,40 @@
-# Segundo desafio 
+# Primeiro desafio 
 
-Nessa aula, aprendi os conceitos fundamentais sobre funções em programação.
+Manipulação do DOM com JavaScript
+Usar document.querySelector() para acessar elementos HTML, como <h1> e <p>.
 
-Entendi que função é um bloco de código que executa uma tarefa específica. Por exemplo, se você quer mostrar uma mensagem ou fazer um cálculo, você pode criar uma função só para isso, e chamá-la sempre que precisar — sem repetir o mesmo código várias vezes.
+Alterar o conteúdo desses elementos dinamicamente com innerHTML.
 
-Também aprendi sobre parâmetros, que são como informações que a função pode receber para funcionar de forma mais flexível. Por exemplo: posso criar uma função que receba um nome como parâmetro e exiba uma mensagem personalizada, como "Olá, Mariana!". Assim, consigo usar a mesma função com vários nomes diferentes.
+Eventos e Funções
+Criar funções em JavaScript para responder a eventos, como cliques em botões (onclick).
 
-Outro ponto importante foi aprender sobre retorno de função. Algumas funções não apenas executam algo, mas também devolvem um resultado que pode ser usado em outras partes do programa. Por exemplo, uma função pode receber um número e retornar o dobro dele. Esse valor retornado pode ser guardado em uma variável ou exibido na tela depois.
+Associar essas funções diretamente nos botões usando o atributo onclick no HTML.
 
-Aprendi também sobre valores booleanos, que representam verdadeiro (true) ou falso (false). Eles são muito usados para fazer comparações ou decisões no código, como verificar qual número é maior entre dois.
+Interação com o Usuário
+Exibir mensagens no console com console.log().
 
-E por fim, entendi melhor o conceito de input (entrada), que é quando damos uma informação para a função trabalhar com ela — como um número, um nome ou qualquer outro dado.
+Mostrar alertas na tela com alert().
 
-No geral, essa aula me ajudou a entender como escrever funções simples, com entrada e saída de dados, e como isso é essencial para construir programas organizados, reutilizáveis e eficientes.
+Pedir informações ao usuário com prompt() e usar a resposta para gerar mensagens personalizadas.
+
+Entrada e Processamento de Dados
+Receber números via prompt().
+
+Converter strings para números usando parseInt().
+
+Realizar operações matemáticas simples, como soma.
+
+Exibir o resultado para o usuário com alert().
+
+Organização do Código
+Separar o projeto em arquivos diferentes: index.html (estrutura), style.css (estilo) e app.js (funcionalidade).
+
+Nomear funções de forma clara e descritiva para facilitar o entendimento.
+
+Manter o código limpo e organizado.
+
+Importância da integração entre HTML, CSS e JavaScript
+Construímos a estrutura da página com HTML e aplicamos estilos com CSS para deixá-la visualmente agradável.
+
+Entendemos que a interação entre HTML e JavaScript permite criar páginas web dinâmicas e interativas, que respondem às ações do usuário.
+
