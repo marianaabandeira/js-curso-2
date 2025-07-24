@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 # Primeiro desafio
+=======
+# Primeiro 
+
+>>>>>>> c2d39f854a1079ea3c28b8a2eedc4cdd193da8ea
 
 Manipulação do DOM com JavaScript
 Usar document.querySelector() para acessar elementos HTML, como <h1> e <p>.
@@ -36,4 +41,8 @@ Manter o código limpo e organizado.
 Importância da integração entre HTML, CSS e JavaScript
 Construímos a estrutura da página com HTML e aplicamos estilos com CSS para deixá-la visualmente agradável.
 
+<<<<<<< HEAD
 Entendemos que a interação entre HTML e JavaScript permite criar páginas web dinâmicas e interativas, que respondem às ações do usuário.
+=======
+Entendemos que a interação entre HTML e JavaScript permite criar páginas web dinâmicas e interativas, que respondem às ações do usuário.
+>>>>>>> c2d39f854a1079ea3c28b8a2eedc4cdd193da8ea
