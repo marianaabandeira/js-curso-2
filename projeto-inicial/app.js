@@ -1,10 +1,21 @@
-
+let listaDeNumerosSorteados = [];
+let numeroLimite = 10;
 let numeroSecreto =gerarNumeroAleatorio();
 let tentativas = 1;
+
+ 
 
 function exibirTextoNaTela(tag, texto) {
     let campo = document.querySelector(tag);
     campo.innerHTML = texto;
+    if ('speechSynthesis' in window) {
+        let utterance = new SpeechSynthesisUtterance(texto);
+        utterance.lang = 'pt-BR';
+        utterance.rate = 1.2;
+        window.speechSynthesis.speak(utterance);
+    } else {
+        console.log('Web Speech API não suportada neste navegador.');
+    }
 }
 
 function exibirMensagemInicial(){
@@ -39,8 +50,18 @@ function verificarChute(){
 }
 
 function gerarNumeroAleatorio() {
-    return parseInt(Math.random() * 10 + 1);
-
+    let numeroEscolhido = parseInt(Math.random() * numeroLimite + 1);
+    let quantidadeDeElementosNalista = listaDeNumerosSorteados.length;
+    if (quantidadeDeElementosNalista == numeroLimite) { // Verifica se a lista já está cheia
+        listaDeNumerosSorteados = [];
+    }
+    if (listaDeNumerosSorteados.includes(numeroEscolhido)) { // Verifica se o número já foi sorteado
+        return gerarNumeroAleatorio(); // Chama a função recursivamente se o número já foi sorteado
+    } else {
+        listaDeNumerosSorteados.push(numeroEscolhido); // Adiciona o número sorteado à lista
+        console.log(listaDeNumerosSorteados)
+        return numeroEscolhido; // Retorna o número se ele não foi sorteado antes
+    }
 
 }
 
